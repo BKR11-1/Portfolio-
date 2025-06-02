@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #fff;
+      color: #222;
+    }
+    .navbar-brand {
+      color: #dc3545 !important;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #dc3545;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #dc3545 !important;
+    }
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+      width: 100%;
+    }
+    .hero {
+      background: #000;
+      color: #fff;
+      padding: 6rem 2rem;
+    }
+    .btn-red {
+      background-color: #dc3545;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-red:hover {
+      background-color: #a71d2a;
+    }
+    .project-card {
+      border: 1px solid #dc3545;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 0 15px #dc3545;
+    }
+    .project-title {
+      color: #dc3545;
+      font-weight: 600;
+    }
+    .hero-img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 4px solid #dc3545;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">BHAWNA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link active" href="#web">Web</a></li>
+        <li class="nav-item"><a class="nav-link" href="#graphic">Graphic</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+        <img src="images/profile.jpg" alt="Bhawna Kumari" class="hero-img" />
+      </div>
+      <div class="col-md-8 text-center text-md-start">
+        <h1 class="display-4">Hi, I'm <span style="color:#dc3545;">BHAWNA</span></h1>
+        <p class="lead fw-bold">A passionate Web Developer & Graphic Designer</p>
+        <a href="#contact" class="btn btn-red btn-lg">Hire Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Web Projects -->
+<section id="web" class="container my-5">
+  <h2 class="mb-4 border-start border-5 border-danger ps-3">💻 Web Development Projects</h2>
+  <div class="row g-4">
+    <!-- Online Store: First Project -->
+    <div class="col-md-6">
+      <div class="project-card p-4">
+        <h3 class="project-title">ShopEase – Online Store Design</h3>
+        <p>A stylish and responsive eCommerce website built with HTML, CSS, and JavaScript. Features a modern layout and product showcase.</p>
+        <a href="https://bkr11-1.github.io/online---store/" class="text-danger fw-semibold" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <!-- DineSplit -->
+    <div class="col-md-6">
+      <div class="project-card p-4">
+        <h3 class="project-title">DineSplit – Smart Bill Calculator</h3>
+        <p>Responsive HTML/CSS app to split restaurant bills, calculate tips & taxes, and manage expenses easily.</p>
+        <a href="https://bkr11-1.github.io/Calculator/" class="text-danger fw-semibold" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <!-- MindMeadow -->
+    <div class="col-md-6 mx-auto">
+      <div class="project-card p-4">
+        <h3 class="project-title">MindMeadow – Healing Journey Game</h3>
+        <p>A calming game designed to reduce stress through creative activities like journaling and breathing exercises.</p>
+        <a href="https://bkr11-1.github.io/game/" class="text-danger fw-semibold" target="_blank">View Project →</a>
+      </div>
+    </div>
+</section>
+
+<!-- Graphic Designing Projects -->
+<section id="graphic" class="container my-5">
+  <h2 class="mb-4 border-start border-5 border-danger ps-3">🎨 Graphic Design Projects</h2>
+  <div class="row g-4">
+
+    <!-- Left Column -->
+    <div class="col-md-6">
+      <!-- Summer Camp Poster -->
+      <div class="project-card p-4">
+        <h3 class="project-title">Adventure Awaits – Summer Camp Flyer</h3>
+        <p>Colorful poster promoting a kids’ summer camp, capturing the joy of learning and adventure.</p>
+        <img src="images/summer-camp.jpg" alt="Summer Camp Poster"
+             class="img-fluid rounded mt-3" onclick="showImage(this.src)" style="cursor: pointer;" />
+      </div>
+
+      <!-- Restaurant Card -->
+      <div class="project-card p-4 mt-4">
+        <h3 class="project-title">Dine & Delight – Restaurant Info Card</h3>
+        <p>Stylish card design to showcase restaurant details like dishes, offers, or QR code menus.</p>
+        <img src="images/restaurant-card.png" alt="Restaurant Card"
+             class="img-fluid rounded mt-3" onclick="showImage(this.src)" style="cursor: pointer;" />
+      </div>
+
+      <!-- My Designer Card -->
+      <div class="project-card p-4 mt-4">
+        <h3 class="project-title">Creative Identity – My Designer Card</h3>
+        <p>Personal card showcasing my identity as a graphic designer with a modern style.</p>
+        <img src="images/Graphic.jpg" alt="Designer Card"
+             class="img-fluid rounded mt-3" onclick="showImage(this.src)" style="cursor: pointer;" />
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-md-6">
+      <!-- World Tour Poster -->
+      <div class="project-card p-4">
+        <h3 class="project-title">End Year Travel Campaign</h3>
+        <p>An exciting travel campaign designed to promote year-end tourism with visually appealing graphics and itinerary highlights.</p>
+        <img src="images/world-tour.jpg" alt="World Tour"
+             class="img-fluid rounded mt-3" onclick="showImage(this.src)" style="cursor: pointer;" />
+      </div>
+
+      <!-- Spa Poster -->
+      <div class="project-card p-4 mt-4">
+        <h3 class="project-title">GlowUp – Spa & Beauty Salon Poster</h3>
+        <p>Elegant poster for a beauty salon, using calm tones and stylish layout for client attraction.</p>
+        <img src="images/beauty.jpg" alt="Spa Poster"
+             class="img-fluid rounded mt-3" onclick="showImage(this.src)" style="cursor: pointer;" />
+      </div>
+
+      <!-- Night Concert Poster -->
+      <div class="project-card p-4 mt-4">
+        <h3 class="project-title">Neon Nights – Concert Poster</h3>
+        <p>Energetic poster designed for a night concert event, using dark themes and glowing typography.</p>
+        <img src="images/concert-poster.jpg" alt="Concert Poster"
+             class="img-fluid rounded mt-3" onclick="showImage(this.src)" style="cursor: pointer;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fullscreen Modal for Enlarged Image -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-black border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage" src="" class="w-100 h-100 object-fit-contain" alt="Enlarged" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- About -->
+<section id="about" class="container my-5">
+  <h2 class="mb-4 border-start border-5 border-danger ps-3">👤 About Me</h2>
+  <p>
+    I am currently pursuing a degree in Mechanical Engineering at Mehran University of Engineering and Technology, Jamshoro.
+    Alongside engineering, I specialize in web development and graphic design. I value honesty, dedication, and creative problem-solving,
+    always delivering quality work on time.
+  </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container my-5 mb-5">
+  <h2 class="mb-4 border-start border-5 border-danger ps-3">📞 Contact</h2>
+  <p>Email: <a href="mailto:bhawnaroopani09@gmail.com" class="text-danger fw-semibold">bhawnaroopani09@gmail.com</a></p>
+  
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/bhawna-kumari-9380302aa/" class="text-danger fw-semibold" target="_blank">Bhawna Kumari</a></p>
+  <p>Fiverr: <a href="https://www.fiverr.com/bhawnaroopani25" class="text-danger fw-semibold" target="_blank">Bhawna Roopani</a></p>
+
+</section>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Image Modal Script -->
+<script>
+  function showImage(src) {
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = src;
+    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+    modal.show();
+  }
+</script>
+
+</body>
+</html>
